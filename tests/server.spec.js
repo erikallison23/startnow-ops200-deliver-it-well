@@ -38,12 +38,12 @@ describe('server/app.js', function() {
     });
   });
 
-  it('page says wassup', (done) => {
+  it('page says wazza', (done) => {
     chai.request(server)
       .get('/')
       .end((err, res) => {
         expect(err).not.exist;
-        expect(JSON.stringify(res.text)).to.contain('wassup');
+        expect(JSON.stringify(res.text)).to.contain('wazza');
         done();
       });
     });
