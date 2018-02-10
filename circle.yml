@@ -1,10 +1,9 @@
-machine:
-  node:
-    version: 8.1.4
-
-      deployment:
-        staging:
-          branch: master
-          heroku:
-            appname: ea-deliver-it-well
+deployment:
+ prod:
+  branch: master
+  heroku:
+    appname: ea-deliver-it-well
+            machine:
+              node:
+                version: 8.1.4
 
